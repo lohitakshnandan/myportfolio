@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="./css/pink.css">
+
+    <!--Live Style Switcher-->
+    <link rel="stylesheet" class="alternate-style" title="blue" type="text/css" href="./css/blue.css" disabled>
+    <link rel="stylesheet"  class="alternate-style" title="green" type="text/css" href="./css/green.css" disabled>
+    <link rel="stylesheet"  class="alternate-style" title="orange" type="text/css" href="./css/orange.css" disabled>
+    <link rel="stylesheet"  class="alternate-style" title="yellow" type="text/css" href="./css/yellow.css" disabled>
+    <link rel="stylesheet"  class="alternate-style" title="pink" type="text/css" href="./css/pink.css">
+    <link rel="stylesheet" type="text/css" href="./css/styleSwitcher.css">
+
+    <title>Webcipher101's Portfolio</title>
+    <script>
+        var bleep = new Audio();
+        bleep.src = "./audio/bleep.mp3";
+    </script>
+    <script>
+        var button = new Audio();
+        button.src = "./audio/button-19.mp3";
+    </script>
+    <script>
+        var whistle = new Audio();
+        whistle.src = "./audio/whistle.mp3";
+    </script>
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .table-container{
+                padding: 0 10%;
+                margin: 40px auto 0;
+            }
+            .heading{
+                font-size: 40px;
+                text-align: center;
+                color: #f1f1f1;
+                margin-bottom: 40px;
+            }
+            .table{
+                width: 100%;
+                border-collapse: collapse;
+            }
+            .table thead{
+                background-color: #ee2828;
+            }
+            .table thead tr th{
+                font-size: 14px;
+                font-weight: medium;
+                letter-spacing: 0.35px;
+                color: #FFFFFF;
+                opacity: 1;
+                padding: 12px;
+                vertical-align: top;
+                border: 1px solid #dee2e685;
+            }
+            .table tbody tr td{
+                font-size: 14px;
+                letter-spacing: 0.35px;
+                font-weight: normal;
+                color: #f1f1f1;
+                background-color: #3c3f44;
+                padding: 8px;
+                text-align: center;
+                border: 1px solid #dee2e685;
+            }
+            .table tbody tr td .btn{
+                width: 130px;
+                text-decoration: none;
+                line-height: 35px;
+                display: block;
+                background-color: #ff1046;
+                font-weight: medium;
+                color: #FFFFFF;
+                text-align: center;
+                vertical-align: middle;
+                user-select: none;
+                border: 1px solid transparent;
+                font-size: 14px;
+                opacity: 1;
+            }
+    
+    @media (max-width: 768px){
+        .table thread{
+            display: none;
+        }
+        .table, .table tbody,.table tr,.table td{
+            display: block;
+            width: 100%;
+        }
+        .table tr{
+            margin-bottom: 15px;
+        }
+        .table tbody tr td{
+            text-align: right;
+            padding-left: 50%;
+            position: relative;
+        }
+        .table td:before{
+            content: attr(data-label);
+            position: absolute;
+            left: 0;
+            width: 50%;
+            padding-left: 15px;
+            font-weight: 600;
+            font-size: 14px;
+            text-align: left;
+        }
+    }
+    
+        </style>
+</head>
+<body>
+    <!--PreLoader-->
+    <div class="preloader">
+        <div class="loader">
+
+        </div>
+    </div>
+    <!--Preloader End-->
+<!--Main Container-->
+<div class="main-container">
+    <!--Aside-->
+    <div class="aside">
+        <!--Logo-->
+        <div class="logo">
+            <a href="#">GAURAV</a>
+        </div>
+        <!--Nav Toggler Button-->
+        <div class="nav-toggler" onclick="bleep.play()">
+            <span></span>
+        </div>
+        <!--NAV-->
+        <ul class="nav">
+            <li><a href="#home" onmouseover="bleep.play()" class="active"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#about" onmouseover="bleep.play()"><i class="fa fa-user"></i> About</a></li>
+            <li><a href="#services" onmouseover="bleep.play()"><i class="fa fa-list"></i> Awards</a></li>
+            <li><a href="#portfolio" onmouseover="bleep.play()"><i class="fa fa-briefcase"></i> Certificates</a></li>
+            <li><a href="#contact" onmouseover="bleep.play()"><i class="fa fa-comments"></i> Contact</a></li>
+        </ul>
+        <!--Copyright-->
+        <div class="copyright-text">
+            &copy; CEH | GAURAV DALAL
+        </div>
+    </div>
+    <!--Aside End-->
+    <!--Main Content-->
+    <div class="main-content">
+        <!--Home Section-->
+        <section class="home section active" id="home"> 
+            <div class="container">
+                <div class="intro">
+                    <img src="./images/gd.png" alt="profile" class="shadow-dark">
+                    <h1>Gaurav Dalal</h1>
+                    <p>Certified Ethical Hacker</p><br>
+                    <p>(C|EH Practical)</p>
+                    <div class="social-link">
+                        <a href="https://twitter.com/webcipher101?s=09" onmouseover="bleep.play()"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100008508153621" onmouseover="bleep.play()"><i class="fa fa-facebook"></i></a>
+                        <a href="https://github.com/webcipher101"><i class="fa fa-github" onmouseover="bleep.play()"></i></a>
+                        <a href="https://www.linkedin.com/in/gaurav-dalal-0434821b5/" onmouseover="bleep.play()"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Home Section End-->
+        <!--About Section-->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>About Me</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="about-content padd-15">
+                        <div class="row">
+                            <div class="about-text padd-15">
+                                <h3>I'm Gaurav Dalal,<span> Cybersecurity Researcher,</span></h3>
+                                <p>Hi My name is Gaurav Dalal. An engineering student highly passionate about Cyber Security & Penetration testing always seeking to get a hands-on security domain. Skilled in Linux,Networking security, WebApplication Security, I have acquired the necessary skills and knowledge to secure your domain.</p>
+                            </div>
+                        </div>
+                         <div class="row">
+                             <div class="personal-info padd-15">
+                                <div class="row">
+                                    <div class="info-item padd-15">
+                                        <p>Birthday : <span>1 September 2001</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                       <p>Age : <span>20</span></p>
+                                   </div>
+                                   <div class="info-item padd-15">
+                                       <p>Youtube : <span><a href="https://www.youtube.com/channel/UCzx4AGbiwy6T6uZDTh9oVzw">Click Here to Visit</a></span></p>
+                                   </div>
+                                   <div class="info-item padd-15">
+                                       <p>E-mail : <span>spyhack2001@gmail.com</span></p>
+                                   </div>
+                                   <div class="info-item padd-15">
+                                       <p>Degree : <span>B-Tech</span></p>
+                                   </div>
+                                   <div class="info-item padd-15">
+                                       <p>Phone : <span>+91 8708310661</span></p>
+                                   </div>
+                                   <div class="info-item padd-15">
+                                       <p>City : <span>Rohtak</span></p>
+                                   </div>
+                                   <div class="info-item padd-15">
+                                       <p>State : <span>Haryana</span></p>
+                                   </div>
+                                </div>
+                                <div class="row">
+                                    <div class="buttons padd-15">
+                                        <a href="#" class="btn" onclick="button.play()">Download CV</a>
+                                        <!--<a href="#" class="btn">Hire Me</a>-->
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="skills padd-15">
+                             <div class="row">
+                                 <div class="skill-item padd-15">
+                                     <h5>Mobile App Pentesting</h5>
+                                     <div class="progress">
+                                         <div class="progress-in" style="width: 85%"></div>
+                                         <div class="skill-percent">85%</div>
+                                     </div>
+                                 </div>
+                                 <div class="skill-item padd-15">
+                                    <h5>WebApp Pentesting</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 95%"></div>
+                                        <div class="skill-percent">95%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item padd-15">
+                                    <h5>Api Pentesting</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 95%"></div>
+                                        <div class="skill-percent">95%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item padd-15">
+                                    <h5>Networking</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 95%"></div>
+                                        <div class="skill-percent">95%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item padd-15">
+                                    <h5>Bash Scripting</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 90%"></div>
+                                        <div class="skill-percent">90%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item padd-15">
+                                    <h5>Python Programming</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 75%"></div>
+                                        <div class="skill-percent">75%</div>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                         </div>
+
+                         <div class="row">
+                            <div class="education padd-15">
+                                <h3 class="title">Education</h3>
+                                <div class="row">
+                                    <div class="timeline-box padd-15">
+                                    <div class="timeline shadow-dark">
+                                        <!--Timeline Item-->
+                                        <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                            <h6 class="timeline-date"><i class="fa fa-calendar"></i>2020 - 2023</h6>
+                                            <h4 class="timeline-title">B-Tech in Electronics & Communication</h4>
+                                            <p class="timeline-text">I m pursuing B-Tech degree in Electronics & Communication Engineering from IES College of Technology. I m a currently a 3rd year students</p>
+                                        </div>
+                                        <!--TTimeline-item-end-->
+                                        <div class="timeline-item">
+                                            <div class="circle-dot"></div>
+                                                <h6 class="timeline-date"><i class="fa fa-calendar"></i>2016-2019</h6>
+                                                <h4 class="timeline-title">Studied at BSF IT Bangalore</h4>
+                                                <p class="timeline-text">I had passed 3year Diploma in Electronics & Communication Engineering from BSF Institute of Technology, Bangalore </p>
+                                            </div>
+                                            <!--TTimeline-item-end-->
+                                        <div class="timeline-item">
+                                            <div class="circle-dot"></div>
+                                                <h6 class="timeline-date"><i class="fa fa-calendar"></i>2016</h6>
+                                                <h4 class="timeline-title">Studied at S.R.S Public School </h4>
+                                                <p class="timeline-text">I had passed 10th C.B.S.E board examination with an C.G.P.A of 9.2 from S.R.S Public School, Rohtak</p>
+                                                <p class="timeline-text">..</p>
+                                                <p class="timeline-text">  ..</p>
+                                            </div>
+                                            <!--TTimeline-item-end-->                
+                                        </div>
+                                    </div> 
+                                </div> 
+                                </div>
+                            
+                            <div class="experience padd-15">
+                                <h3 class="title">Experience</h3>
+                                <div class="row">
+                                    <div class="timeline-box padd-15">
+                                    <div class="timeline shadow-dark">
+                                        <!--Timeline Item-->
+                                        <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                            <h6 class="timeline-date"><i class="fa fa-calendar"></i>July(2021) - Junuary(2022)</h6>
+                                            <h4 class="timeline-title">Cybersecurity RedTeam Intern</h4>
+                                            <p class="timeline-text"><b>Activities :</b></p>
+                                            <p class="timeline-text">➢ Performing Black Box testing.</p>
+                                            <p class="timeline-text">➢ Automation & Manual Reporting.</p>
+                                            <p class="timeline-text">➢ Performing Web and App testing.</p>
+                                            <p class="timeline-text">➢ Created Automation testing Environment Using ZAP<./p>
+                                            <p class="timeline-text">➢ Daily Meeting & Reporting.</p>
+                                            <p class="timeline-text">➢ Creating Test Plan, Writing Test Cases, Performing the Manual Test.</p>
+                                            <p class="timeline-text">➢ Working with a Team of Developers.</p>
+                                        </div>
+                                        <!--TTimeline-item-end-->
+                                        <div class="timeline-item">
+                                            <div class="circle-dot"></div>
+                                                <h6 class="timeline-date"><i class="fa fa-calendar"></i>June - July (2021) </h6>
+                                                <h4 class="timeline-title">Gurugram Police Cybersecurity Summer Intern (GPCSSIP-2021)</h4>
+                                                <p class="timeline-text"><b>Activities :</b></p>
+                                                <p class="timeline-text">➢ Worked on various tool creation for Cyber cell.</p>
+                                                <p class="timeline-text">➢ Conducted various Cyber Awareness sessions.  </p>
+                                                <p class="timeline-text">➢ Weekly Assignments.  </p>
+                                            </div>
+                                        </div>
+                                            <!--TTimeline-item-end-->
+                                    </div> 
+                                </div> 
+                                   
+                            </div>                                           
+                            
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--About Section End-->
+
+        <!--Service Section-->
+        <section class="service section" id="services"> 
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>My Achievements</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--Service-Item-->
+                    <div class="table-container">
+                        <h1 class="heading">Awards Table</h1>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Site Name</th>
+                                    <th>Reward</th>
+                                    <th>Link</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Site Name">APPLE</td>
+                                    <td data-label="Reward">Hall Of Fame</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://support.apple.com/en-in/HT201536" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">GOOGLE</td>
+                                    <td data-label="Reward">Hall Of Fame</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://bughunters.google.com/leaderboard/honorable-mentions" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">ASUS</td>
+                                    <td data-label="Reward">Hall Of Fame</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.asus.com/content/ASUS-Product-Security-Advisory/" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">ASUS (2nd)</td>
+                                    <td data-label="Reward">Hall Of Fame</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/gaurav-dalal-0434821b5_bugbounty-bugbountytips-bugbountytips-activity-6879152522951585793-LJ5W" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">Lenovo</td>
+                                    <td data-label="Reward">Hall Of Fame</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/gaurav-dalal-0434821b5_bugbounty-bughunting-cybersecurity-activity-6890178412284133376-G1C9" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">Hive Stream</td>
+                                    <td data-label="Reward">Hall Of Fame</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.hivestreaming.com/security-hall-of-fame" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">Xsolla</td>
+                                    <td data-label="Reward">Bounty</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/gaurav-dalal-0434821b5_bugbounty-bughunting-bughunter-activity-6906119095104761856-AfKB" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">Upstox</td>
+                                    <td data-label="Reward">Bounty</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/gaurav-dalal-0434821b5_bounty-bugbounty-cybersecurity-activity-6892518989822533633-4cdc" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">NestForms</td>
+                                    <td data-label="Reward">Bounty</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/gaurav-dalal-0434821b5_bugbounty-bugbountytips-bughunting-activity-6903029245233238017-jSOE" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">Gcore-Labs</td>
+                                    <td data-label="Reward">Bounty</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/gaurav-dalal-0434821b5_bugbounty-bughunting-bughunter-activity-6896677762115997696-2Z7w" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">TechGig</td>
+                                    <td data-label="Reward">Bounty</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/gaurav-dalal-0434821b5_bugbounty-bugbountytips-bughunting-activity-6902172573921083393-LSQ2" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">Sectara</td>
+                                    <td data-label="Reward">Bounty</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/gaurav-dalal-0434821b5_bugbounty-bugbountytips-bughunting-activity-6884654439593070592-ZsV6" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">TechGig(2nd)</td>
+                                    <td data-label="Reward">Bounty</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/gaurav-dalal-0434821b5_bugbounty-bughunting-cybersecurity-activity-6852659926603575296-OyUQ" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">AutoProctor</td>
+                                    <td data-label="Reward">Bounty</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://twitter.com/webcipher101/status/1417568056071520256" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">United Nations</td>
+                                    <td data-label="Reward">Hall Of Fame</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://unite.un.org/content/un-information-security-hall-fame" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">RIPE NCC</td>
+                                    <td data-label="Reward">Hall Of Fame</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.ripe.net/support/contact/responsible-disclosure-policy/hall-of-fame" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">Netreo</td>
+                                    <td data-label="Reward">Hall of Fame</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.netreo.com/vulnerability-disclosure-policy/" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">STKKR</td>
+                                    <td data-label="Reward">Hall of Fame</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://stkkr.nl/responsible-disclosure/hall-of-fame/" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">DHS-Vdp</td>
+                                    <td data-label="Reward">Hall Of Fame</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://bugcrowd.com/dhs-vdp/hall-of-fame" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">Google Cloud</td>
+                                    <td data-label="Reward">Swags</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/gaurav-dalal-0434821b5_google-googledevelopers-googlecloudplatform-activity-6876478932762419200-MCSG" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">Veracode</td>
+                                    <td data-label="Reward">Swags</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/gaurav-dalal-0434821b5_bugbounty-bughunting-bugbountytips-activity-6872484736418373632-nz_D" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">Takealot</td>
+                                    <td data-label="Reward">Letter of Appreciation</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/gaurav-dalal-0434821b5_bugbounty-bughunting-bughunter-activity-6863873410452353024-RrB4" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">Lufa Farm</td>
+                                    <td data-label="Reward">Hall Of Fame</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://montreal.lufa.com/en/security" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">Hoppin</td>
+                                    <td data-label="Reward">Hall Of Fame</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://hopin.com/security/hall-of-fame" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">NTUC Enterprise</td>
+                                    <td data-label="Reward">Hall Of Fame</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.ntucenterprise.sg/contactus/vulnerability-disclosure-programme/" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">Arrow Electronics</td>
+                                    <td data-label="Reward">Hall Of Fame</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://bugcrowd.com/arrow-electronics-vdp/hall-of-fame" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">Inflectra</td>
+                                    <td data-label="Reward">Hall Of Fame</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.inflectra.com/company/responsible-disclosure.aspx" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">CERT-EU</td>
+                                    <td data-label="Reward">Hall Of Fame</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://cert.europa.eu/cert/newsletter/en/latest_HallOfFame_.html" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">Manulife (Hackerone-Private)</td>
+                                    <td data-label="Reward">Hall Of Fame</td>
+                                    <td data-label="Site Name"><a target="_blank" href=# class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">Rakuten</td>
+                                    <td data-label="Reward">Hall Of Fame</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://bugcrowd.com/rakuten-vdp/hall-of-fame" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">Meredith Corporation</td>
+                                    <td data-label="Reward">Hall Of Fame</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://hackerone.com/meredith/thanks?type=team" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">Kistler</td>
+                                    <td data-label="Reward">Hall of Fame</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://bugcrowd.com/kistler-vdp/hall-of-fame" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">NCIIPC RVDP</td>
+                                    <td data-label="Reward">Acknowledgement</td>
+                                    <td data-label="Site Name"><a target="_blank" href=# class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                                        
+            </div>
+        </section> 
+        <!--Service Section End-->
+
+        <!--Portfolio Section-->
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>My Cert's</h2>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="portfolio-filter padd-15">
+                        <!--
+                        <button type="button" class="active" data-filter="all">All</button>
+                        <button type="button" data-filter="web-design">Web-design</button>
+                        <button type="button" data-filter="photography">Photography</button>
+                        <button type="button" data-filter="wordpress">Wordpress</button>
+                        -->
+                    </div>
+                </div>
+                <div class="row portfolio-items">
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/ceh_a.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By EC-Council</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="wordpress" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/ccsk.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By Cybrary</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="photography" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/mas.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By Cybrary</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/cns.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By Cybrary</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/acti.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By Cybrary</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="wordpress" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/m3f.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By Cybrary</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/cli.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By Cybrary</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/itic.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By Cybrary</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/ibc.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By IBM</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/crposs.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By IBM</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/nsdv.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By IBM</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/ptirf.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By IBM</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/ccfsa.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By IBM</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/cti.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By IBM</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/cse_by_cisco.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By CISCO</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/bs_noida.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By CISCO</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/fword.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By CISCO</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/tal_loa.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By CISCO</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/thm_2021.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By CISCO</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/thm_2020.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By CISCO</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                </div>
+            </div>
+        </section>
+
+        <!--Contact Section-->
+        <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Contact Me</h2>
+                    </div>
+                    </div>
+                <div class="row">
+                    <!--Contact info item-->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-phone"></i></div>
+                        <h4>Call Me On</h4>
+                        <p>+91 8708310661</p>
+                    </div>
+                    <!--Contact info item End-->
+                    <!--Contact info item-->
+                    <!--<div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-map-marker"></i></div>
+                        <h4>Address</h4>
+                        <p>Arya Nagar Street No 2, Morar <Gwalior</p>
+                    </div>-->
+                    <!--Contact info item End-->
+                    <!--Contact info item-->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p>spyhack2001@gmail.com</p>
+                    </div>
+                    <!--Contact info item End-->
+                 </div>
+                    
+                    <div class="row">
+                        <form class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12">
+                                    <div class="form-group">
+                                    <textarea type="text" class="form-control" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 padd-15">
+                                <button type="submit" class="btn" onmouseover="button.play()" onclick="whistle.play()">Send Message</button>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <!--Contact Form End-->
+                
+                </div> 
+        </section>       
+        <!--Contact Section End-->
+    </div>
+    <!--Main content end-->
+</div>
+<!--Main Container-->
+
+<!--LightBox-->
+<div class="lightbox ">
+    <div class="lightbox-content">
+        <div class="lightbox-close">&times;</div>
+        <img src="./images/snake.gif" class="lightbox-img" onclick="nextItem()">
+        <div class="lightbox-caption">
+            <div class="caption-text"></div>
+            <div class="caption-counter"></div>
+        </div>
+
+    </div>
+    <div class="lightbox-controls">
+        <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
+        <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
+    </div>
+</div>
+<!--LightBox End-->
+
+<!--Live Stle Switcher-->
+<div class="style-switcher">
+    <div class="toggle-style-switcher" onclick="bleep.play()">
+        <i class="fa fa-cog fa-spin" onclick="bleep.play()"></i>
+    </div>    
+    <h5>Style Switcher</h5>
+    <ul>
+        <li><a href="javascript:void(0);" title="pink" style="background-color: #ec1839;" onclick="setActiveStyle('pink')"></a></li>
+        <li><a href="javascript:void(0);" title="blue" style="background-color: #2196f3;" onclick="setActiveStyle('blue')"></a></li>
+        <li><a href="javascript:void(0);" title="green" style="background-color: #72b626;" onclick="setActiveStyle('green')"></a></li>
+        <li><a href="javascript:void(0);" title="orange" style="background-color: #fa5b07;" onclick="setActiveStyle('orange')"></a></li>
+        <li><a href="javascript:void(0);" title="yellow" style="background-color: #ffb400;" onclick="setActiveStyle('yellow')"></a></li>
+    </ul>
+    <h5>Body Skin</h5>
+    <label>
+        <input type="radio" class="body-skin" name="body-style" value="light" checked="true" onclick="whistle.play()">
+        Light
+    </label>
+    <label>
+        <input type="radio" class="body-skin" name="body-style" value="dark" onclick="whistle.play()">
+        Dark
+    </label>
+</div>
+
+<!--Live Style Switcher End here-->
+
+<script src="js/script.js"></script>
+<script src="./js/styleSwitcher.js"></script>
+
+</body>
+</html>
