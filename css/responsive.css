@@ -1,0 +1,193 @@
+@media (max-width:1199px) {
+    .section .container{
+        padding-top: 70px;
+    }
+    .aside .nav-toggler{
+        display:-ms-flexbox;
+        display: flex;
+        left: 2rem;
+        top: 30px;
+    }
+    .aside .nav-toggler .open{
+        left: 200px;
+    }
+    .aside {
+        left: -270px;
+        
+
+    }
+    .aside.open{
+        left: 0px;
+       
+    }
+    .section{
+        left: 0;
+    }
+
+    .main-content {
+        padding-left: 0;
+    }
+    .section.open{
+        left: 270px;
+        
+    }
+    
+}
+    
+
+
+
+
+@media (max-width:767px) {
+
+    .about .about-content .education,
+    .about .about-content .experience {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .portfolio .portfolio-item,
+    .service .service-item {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+
+}
+
+@media (max-width:645px) {
+    .about .about-content .personal-info .info-item p span {
+        display: block;
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width:540px) {
+
+    .portfolio .portfolio-item,
+    .service .service-item {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+
+    .about .about-content .personal-info .buttons .btn,
+    .about .about-content .personal-info .info-item p span {
+        font-size: 12px;
+    }
+    .about .about-content .personal-info .buttons .btn{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .contact .contact-info-item p,
+    .service .service-item .service-item-inner p,
+    .about .about-content .timeline .timeline-text {
+        font-size: 12px;
+    }
+
+
+}
+@media (max-width:425px){
+    .row{
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .about .about-content .about-text h3 {
+        font-size: 20px;
+    }
+    .aside.open{
+        width: 100%;
+        
+    }
+    .about .about-content .skills .skill-item{
+        flex: 0 0 100%;
+    max-width: 100%;
+    
+    }
+    .about .about-content .timeline {
+        width: 110%;
+    }
+    .aside .logo{
+        padding: 60px 0;
+    }
+    .about .about-content .personal-info .info-item {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+    .about .about-content .timeline .timeline-title{
+        font-size: 14px;
+    }
+    .contact .contact-info-item{
+        
+        padding-right: 9px!important;
+    }
+    .about .about-content .personal-info .info-item p{
+        font-size: 16px;
+    }
+    .contact .contact-info-item .icon .fa{
+       
+        font-size:24px;
+    }
+    .contact .contact-info-item h4{
+       
+        font-size: 12px;
+    }
+    .contact .contact-info-item p{
+        
+        font-size: 10px;
+    }
+    .contact .contact-form .form-item .form-control{
+       
+        height: 3px;
+        font-size:10px;
+        padding: 10px 12px;
+    }
+    .contact .contact-form .form-item textarea.form-control{
+        padding-left: 18px;
+        height: 70px;
+        width: 210px;
+        margin-left: 10px;
+    }
+
+}
+@media (max-width:380px) {
+    .aside.open {
+        width: 100%;
+    }
+
+    
+
+    .aside .copyright-text {
+        font-size: 15px;
+        padding-left: 15px;
+    }
+
+    .aside .nav li a {
+        font-size: 16px;
+    }
+} 
+@media (max-width: 320px){
+    .about .about-content .timeline {
+        width: 120%;
+    }
+    .contact .contact-form .form-item textarea.form-control{
+        width: 200px;
+        height: 60px;
+        margin-left: 9px;
+    }
+}
