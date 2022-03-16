@@ -26,6 +26,10 @@
         button.src = "./audio/button-19.mp3";
     </script>
     <script>
+        var intro = new Audio();
+        intro.src = "./audio/intro.mp3";
+    </script>
+    <script>
         var whistle = new Audio();
         whistle.src = "./audio/whistle.mp3";
     </script>
@@ -135,7 +139,7 @@
             <a href="#">HELLO</a>
         </div>
         <!--Nav Toggler Button-->
-        <div class="nav-toggler" onclick="bleep.play()">
+        <div class="nav-toggler" onclick="intro.play()">
             <span></span>
         </div>
         <!--NAV-->
